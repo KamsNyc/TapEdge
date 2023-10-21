@@ -14,7 +14,7 @@ export default function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-        <div className="mt-10 lg:mt-20 w-full h-full relative isolate overflow-hidden  rounded-3xl md:rounded-none md:pt-24 lg:flex lg:gap-x-10  lg:pt-0 mx-auto text-7xl ">
+        <div className="mt-10 lg:mt-18 w-full h-full relative isolate overflow-hidden  rounded-3xl md:rounded-none md:pt-24 lg:flex lg:gap-x-10  lg:pt-0 mx-auto text-7xl ">
     
           <div className="mx-auto max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left lg:ml-48">
             <h2 className="text-4xl font-bold tracking-tight text-black md:text-5xl">
@@ -37,7 +37,7 @@ export default function HeroSection() {
               </a>
             </div>
           </div>
-          <div className="relative mt-16 h-80 lg:mt-8">
+          <div className="relative mt-16 h-[500px] lg:mt-8">
             <img
               className="absolute rounded-md left-0 top-0 w-[57rem] max-w-none bg-white/5 ring-1 ring-white/10"
               src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
