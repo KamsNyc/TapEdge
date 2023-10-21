@@ -1,13 +1,16 @@
 import {UserButton, auth } from '@clerk/nextjs'
 import Link from 'next/link'
 import React from 'react'
+import MobileNavbar from './MobileNavbar'
 
 function Navbar() {
   //take userid to see if they are logged in our not
     const {userId} = auth()
     console.log(userId)
   return (
-    <nav className='h-[60px] w-full border px-96'>
+    <>
+    {/* DESKTOP BREAKPOINT: LARGE */}
+    <nav className='h-[60px] w-full border px-6 lg:px-20 2xl:px-96 hidden lg:block'>
       {/* CONTAINER */}
       <section className='flex items-center justify-center w-full h-full gap-4'>
 
@@ -53,6 +56,13 @@ function Navbar() {
       </section>
 
     </nav>
+
+    {/* NAV MOBILE */}
+    <section className='lg:hidden'>
+    <MobileNavbar />
+    </section>
+
+    </>
   )
 }
 
