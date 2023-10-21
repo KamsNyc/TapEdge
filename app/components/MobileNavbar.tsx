@@ -42,7 +42,7 @@ function MobileNavbar() {
           {/* LOGGED IN BUTTON */}
           <UserButton />
 
-        <div id="WARPPER" className=''>
+        <div id="WARPPER" className='flex items-center justify-center'>
              {/* SHEET */}
           <Sheet>
             <SheetTrigger>
