@@ -13,6 +13,7 @@ const navigation = [
 ]
 
 export default function HeroSection() {
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
