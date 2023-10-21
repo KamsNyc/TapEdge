@@ -14,9 +14,9 @@ export default function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-        <div className="mt-10 lg:mt-20 w=full h-screen relative isolate overflow-hidden  rounded-3xl md:rounded-none md:pt-24 lg:flex lg:gap-x-10  lg:pt-0 mx-auto text-7xl ">
+        <div className="mt-10 lg:mt-20 w-full h-full relative isolate overflow-hidden  rounded-3xl md:rounded-none md:pt-24 lg:flex lg:gap-x-10  lg:pt-0 mx-auto text-7xl ">
     
-          <div className="mx-auto max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left lg:ml-16">
+          <div className="mx-auto max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left lg:ml-48">
             <h2 className="text-4xl font-bold tracking-tight text-black md:text-5xl">
             Bringing Businesses and Individuals Together,
               <br />
