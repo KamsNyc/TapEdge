@@ -1,6 +1,9 @@
 'use client'
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+
+// Import statements
+
+import { Fragment, useState } from 'react';
+import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -9,28 +12,32 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import Link from 'next/link'
+} from '@heroicons/react/24/outline';
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
+import Link from 'next/link';
 
+// Define your data
 const products = [
-  { name: 'Analytics', description: 'Get Link better understanding of your traffic', href: '/', icon: ChartPieIcon },
+  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '/', icon: ChartPieIcon },
   { name: 'Engagement', description: 'Speak directly to your customers', href: '/', icon: CursorArrowRaysIcon },
   { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '/', icon: FingerPrintIcon },
   { name: 'Integrations', description: 'Connect with third-party tools', href: '/', icon: SquaresPlusIcon },
   { name: 'Automations', description: 'Build strategic funnels that will convert', href: '/', icon: ArrowPathIcon },
-]
+];
+
 const callsToAction = [
   { name: 'Watch demo', href: '/', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '/', icon: PhoneIcon },
-]
+];
 
+// Helper function
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
+// Your component
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white">
@@ -38,7 +45,7 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only text-black">Your Company</span>
-            <h1 className='text-black text-2xl font-bold'>TapEdge</h1>
+            <h1 className="text-black text-2xl font-bold">TapEdge</h1>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -92,7 +99,7 @@ export default function Example() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover-bg-gray-100"
                     >
                       <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                       {item.name}
@@ -119,7 +126,7 @@ export default function Example() {
           </Link>
         </div>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -146,7 +153,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover-bg-gray-50">
                         Product
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -155,14 +162,13 @@ export default function Example() {
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
                         {[...products, ...callsToAction].map((item) => (
-                          <Disclosure.Button
+                          <Link
                             key={item.name}
-                            as="Link"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover-bg-gray-50"
                           >
                             {item.name}
-                          </Disclosure.Button>
+                          </Link>
                         ))}
                       </Disclosure.Panel>
                     </>
@@ -170,19 +176,19 @@ export default function Example() {
                 </Disclosure>
                 <Link
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover-bg-gray-50"
                 >
                   Features
                 </Link>
                 <Link
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover-bg-gray-50"
                 >
                   Marketplace
                 </Link>
                 <Link
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover-bg-gray-50"
                 >
                   Company
                 </Link>
@@ -190,7 +196,7 @@ export default function Example() {
               <div className="py-6">
                 <Link
                   href="/account"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover-bg-gray-50"
                 >
                   Account
                 </Link>
@@ -200,5 +206,5 @@ export default function Example() {
         </Dialog.Panel>
       </Dialog>
     </header>
-  )
+  );
 }
