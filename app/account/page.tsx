@@ -1,7 +1,10 @@
 import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { SignIn, SignUp, auth } from '@clerk/nextjs';
 
 function Account() {
+  const {userId} = auth()
+  console.log(userId)
     return (
       <main className='flex items-center justify-center'>
         <section className='w-full flex items-center justify-center mt-16'>
@@ -11,10 +14,10 @@ function Account() {
               <TabsTrigger value="Sign Up">Sign Up</TabsTrigger>
             </TabsList>
             <TabsContent className='flex flex-col items-center justify-center' value="Sign Up">
-             sign up
+            <SignUp />
             </TabsContent>
             <TabsContent className='flex flex-col items-center justify-center' value="Login">
-              sign in
+            <SignIn />
             </TabsContent>
           </Tabs>
         </section>
