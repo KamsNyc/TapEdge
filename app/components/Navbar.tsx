@@ -20,7 +20,7 @@ function Navbar() {
         </div>
 
         {/* MIDDLE EMPTY */}
-        <ul className="w-[50%] flex gap-4">
+        <ul className="w-[50%] flex gap-4 font-normal ">
           <Link href={'/'}>Home</Link>
           <Link href={'/'}>All Products</Link>
           <Link href={'/'}>Why TapEdge?</Link>
