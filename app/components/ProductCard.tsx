@@ -5,8 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
 
+interface Product {
+    _id: string;
+    image: string;
+    title: string;
+    description: string;
+    price: number;
+  }
+
 export default function ProductCard() {
-  const [productCard, setProductCard] = useState([]);
+  const [productCard, setProductCard] = useState<Product[]>([]);
 
   const getProductCards = async () => {
     try {
