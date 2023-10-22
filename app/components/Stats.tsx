@@ -7,14 +7,10 @@ const stats = [
   
   export default function Stats() {
     return (
-      <div className="bg-white py-16">
+      <div className="bg-white py-[3rem]">
         <div className="mx-auto max-w-7xl px-2 lg:px-8">
-          <dl className="grid grid-cols-4 gap-x-2 gap-y-8 text-center">
-            {/* small message */}
-            <div className="pt-1">
-                <span className='text-4xl font-semibold'>Why</span>
-                <p className='pt-3'>Used by the world's most amazing companies</p>
-            </div>
+          <dl className="grid grid-cols-3 gap-x-2 gap-y-8 text-center">
+            
             {stats.map((stat) => (
               <div key={stat.id} className="mx-auto flex w-full flex-col gap-y-2">
                 <dt className="text-base leading-7 text-gray-600 flex items-center justify-center">{stat.name}</dt>

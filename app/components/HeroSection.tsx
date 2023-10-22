@@ -24,9 +24,9 @@ export default function HeroSection() {
           {/* BADGES */}
           <div className="hidden md:flex gap-3 md:ml-[-4rem] ">
           <span className='text-base font-light'>Boost:</span>
-          <Badge variant="outline" className='mb-4 pt-1 font-semibold' >Customer Reviews</Badge>
-          <Badge variant="outline" className='mb-4 pt-1 font-semibold' >Online Reputation</Badge>
-          <Badge variant="outline" className='mb-4 pt-1 font-semibold' >Customer Engagement</Badge>
+          <Badge variant="outline" className='mb-7 pt-1 font-semibold' >Customer Reviews</Badge>
+          <Badge variant="outline" className='mb-7 pt-1 font-semibold' >Online Reputation</Badge>
+          <Badge variant="outline" className='mb-7 pt-1 font-semibold' >Customer Engagement</Badge>
           </div>
           
 

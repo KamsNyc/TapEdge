@@ -1,5 +1,6 @@
 import { currentUser } from '@clerk/nextjs'
 import React from 'react'
+import ProductCard from '../components/ProductCard'
 
 async function page() {
   const user = await currentUser()
@@ -7,7 +8,7 @@ async function page() {
   return (
     
     <div className=''>
-      dashboard
+      <ProductCard />
     </div>
   )
 }
