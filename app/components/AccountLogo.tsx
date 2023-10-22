@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 function AccountLogo() {
-    const {userId} = auth()
+
   return (
     <Link
                   href="/account"

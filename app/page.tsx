@@ -23,7 +23,7 @@ export default function Home() {
      </section>
 
      <section>
-      <ProductCard />
+      <ProductCard  />
      </section>
     </main>
   )

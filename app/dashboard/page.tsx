@@ -4,7 +4,6 @@ import ProductCard from '../components/ProductCard'
 
 async function page() {
   const user = await currentUser()
-  console.log(user) 
   return (
     
     <div className=''>

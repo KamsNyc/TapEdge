@@ -6,7 +6,6 @@ import MobileNavbar from './MobileNavbar'
 function Navbar() {
   //take userid to see if they are logged in our not
     const {userId} = auth()
-    console.log(userId)
   return (
     <>
     {/* DESKTOP BREAKPOINT: LARGE */}
