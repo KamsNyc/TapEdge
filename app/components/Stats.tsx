@@ -7,7 +7,7 @@ const stats = [
   
   export default function Stats() {
     return (
-      <div className="bg-white py-[3rem]">
+      <div className="bg-white py-[4rem]">
         <div className="mx-auto max-w-7xl px-2 lg:px-8">
           <dl className="grid grid-cols-3 gap-x-2 gap-y-8 text-center">
             

@@ -14,7 +14,7 @@ import Link from "next/link";
 
 function MobileNavbar() {
   return (
-    <nav className="h-[60px] w-full border px-12">
+    <nav className="h-[60px] w-full border px-12 hidden">
       {/* CONTAINER */}
       <section className="flex items-center justify-between w-full h-full gap-4">
         {/* LEFT SIDE */}
