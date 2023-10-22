@@ -1,10 +1,8 @@
 import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { SignIn, SignUp, auth } from '@clerk/nextjs';
+import { SignIn, SignUp, currentUser } from '@clerk/nextjs';
 
-function Account() {
-  const {userId} = auth()
-  console.log(userId)
+async function Account() {
     return (
       <main className='flex items-center justify-center'>
         <section className='w-full flex items-center justify-center mt-16'>

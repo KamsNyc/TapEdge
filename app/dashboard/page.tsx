@@ -1,8 +1,12 @@
+import { currentUser } from '@clerk/nextjs'
 import React from 'react'
 
-function page() {
+async function page() {
+  const user = await currentUser()
+  console.log(user) 
   return (
-    <div>
+    
+    <div className=''>
       dashboard
     </div>
   )
