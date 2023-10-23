@@ -15,13 +15,13 @@ function Navbar() {
 
         {/* LEFT SIDE */}
         <div className="w-[20%]">
-          <h1 className='text-3xl font-black hidden'>TAPEDGE</h1>
+          <h1 className='text-3xl font-black '>TAPEDGE</h1>
         </div>
 
         {/* MIDDLE EMPTY */}
-        <ul className="hidden w-[50%] flex gap-4 font-normal text-[15px] ">
+        <ul className=" w-[50%] flex gap-4 font-normal text-[15px] ">
           <Link href={'/'}>Home</Link>
-          <Link href={'/'}>All Products</Link>
+          <Link href={'/product'}>All Products</Link>
           <Link href={'/'}>Why TapEdge?</Link>
           <Link href={'/'}>FAQ</Link>
           <Link href={'/'}>Contact</Link>

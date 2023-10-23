@@ -18,7 +18,7 @@ export default function ProductCard() {
 
   const getProductCards = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/allproductcard');
+      const res = await axios.get('http://localhost:8000/productcard');
       setProductCard(res.data);
     } catch (error) {
       console.error(error);

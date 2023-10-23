@@ -1,4 +1,4 @@
-
+'use client'
 
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
@@ -56,13 +56,15 @@ const product = {
   details:
     'The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.',
 }
+
+
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function ProductOverview() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 

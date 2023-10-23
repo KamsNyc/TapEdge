@@ -14,7 +14,7 @@ import Link from "next/link";
 
 function MobileNavbar() {
   return (
-    <nav className="h-[60px] w-full border px-12 hidden">
+    <nav className="h-[60px] w-full border px-12">
       {/* CONTAINER */}
       <section className="flex items-center justify-between w-full h-full gap-4">
         {/* LEFT SIDE */}
@@ -53,7 +53,7 @@ function MobileNavbar() {
                 <SheetTitle className='mb-6'>Menu</SheetTitle>
                 <SheetDescription className="py-4">
                 <Link className="flex py-2 cursor-pointer hover:bg-gray-50 duration-300 ease-in" href={'/'}>Home</Link>
-          <Link className="flex py-2 cursor-pointer hover:bg-gray-50 duration-300 ease-in" href={'/'}>All Products</Link>
+          <Link className="flex py-2 cursor-pointer hover:bg-gray-50 duration-300 ease-in" href={'/product'}>All Products</Link>
           <Link className="flex py-2 cursor-pointer hover:bg-gray-50 duration-300 ease-in" href={'/'}>Why TapEdge?</Link>
           <Link className="flex py-2 cursor-pointer hover:bg-gray-50 duration-300 ease-in" href={'/'}>FAQ</Link>
           <Link className="flex py-2 cursor-pointer hover:bg-gray-50 duration-300 ease-in" href={'/'}>Contact</Link>

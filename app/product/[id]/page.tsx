@@ -1,10 +1,10 @@
+import ProductOverview from '@/app/components/ProductOverview'
 import React from 'react'
 
 function Product() {
   return (
     <div>
-        server
-        
+        <ProductOverview />
     </div>
   )
 }
